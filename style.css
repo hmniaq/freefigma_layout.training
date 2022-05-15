@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header, .main, .footer, .main-container, .article {
+    display: flex;
+}
+
+.header, .main, .footer, .article {
+    width: 100%;
+}
+
+.header {
+    justify-content: center;
+    font-weight: 700;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+}
+
+.main {
+    margin-top: 124px;
+}
+
+
+.main, .article, .footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    width: 945px;
+    flex-direction: column;
+}
+
+.header-list {
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    color: #828282;
+    border-bottom: 1px solid #828282;
+}
+
+
+.head-descript {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.p-head {
+    font-size: 48px;
+}
+
+.p-descript {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.article, .head-descript, .header {
+    margin-bottom: 40px;
+}
+
+.about-me-art {
+    background-color: #F6F6F6;
+}
+
+.main-descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 120px;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.program {
+    height: 206px;
+    width: 166px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.p-descript-bold {
+    color: #828282;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.stars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+p.head {
+    font-size: 34px;
+}
+
+.skills-art {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.portfolio-art {
+    text-align: center;
+    padding: 40px 0px;
+    background-color: #F6F6F6;
+}
+
+.work-example {
+    margin: 50px 0px;
+}
+
+.info {
+    text-align: center;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 40px;
+    width: 180px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.social-net {
+    display: flex;
+    width: 343px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
