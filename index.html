@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
     <link rel="stylesheet" href="style.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 <body>
     <header class="header">
@@ -162,24 +165,14 @@
 
                 <h1 class="p-head">Portfolio</h1>
 
-                <div class="work-example">
+                <div class="work-example fotorama" 
+                    data-allowfullscreen="true"
+                    data-loop="true"
+                    data-keyboard="true">
 
-                    <img src="img/levis.png" alt="levi`s">
-                    <p class="p-descript">Online fashion store - Homepage</p>
-
-                </div>
-
-                <div class="work-example">
-
-                    <img src="img/reebok.png" alt="levi`s">
-                    <p class="p-descript">Reebok Store - Concept</p>
-
-                </div>
-
-                <div class="work-example">
-
-                    <img src="img/braun.png" alt="levi`s">
-                    <p class="p-descript">Braun Landing Page - Concept</p>
+                    <img src="img/levis.png" alt="levi`s" data-caption="Online fashion store - Homepage">
+                    <img src="img/reebok.png" alt="levi`s" data-caption="Reebok Store - Concept">
+                    <img src="img/braun.png" alt="levi`s" data-caption="Braun Landing Page - Concept">
 
                 </div>
 

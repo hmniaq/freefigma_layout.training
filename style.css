@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +20,7 @@
     justify-content: center;
     font-weight: 700;
     position: fixed;
+    z-index: 100;
     background-color: #fff;
     top: 0;
 }
@@ -34,7 +36,8 @@
 }
 
 .main-container {
-    width: 945px;
+    width: 60%;
+    max-width: 945px;
     flex-direction: column;
 }
 
@@ -160,4 +163,8 @@ p.head {
     width: 343px;
     justify-content: space-between;
     margin-top: 80px;
+}
+
+.work-example img {
+    width: 100%;
 }
