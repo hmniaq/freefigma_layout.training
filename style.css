@@ -61,6 +61,7 @@
 
 .p-head {
     font-size: 48px;
+    font-weight: 900;
 }
 
 .p-descript {
@@ -148,7 +149,7 @@ p.head {
     align-items: center;
 }
 
-.btn {
+.button {
     margin-top: 30px;
     background-color: black;
     border-radius: 40px;
@@ -167,4 +168,16 @@ p.head {
 
 .work-example img {
     width: 100%;
+}
+
+.request-art {
+    padding: 50px 0px;
+}
+
+.request-form div {
+    margin: 15px 0px;
+}
+
+.footer {
+    background-color: #F6F6F6;
 }
