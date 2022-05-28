@@ -94,13 +94,13 @@
 }
 
 .program {
-    height: 206px;
-    width: 166px;
+    width: 25%;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-between;
+    margin: 0 10px;
 }
 
 .p-descript-bold {
@@ -178,6 +178,7 @@ p.head {
     margin: 15px 0px;
 }
 
-.footer {
-    background-color: #F6F6F6;
+.total {
+    display: flex;
+    justify-content: space-between;
 }
