@@ -29,16 +29,9 @@
     margin-top: 124px;
 }
 
-
 .main, .article, .footer {
     flex-direction: column;
     align-items: center;
-}
-
-.main-container {
-    width: 60%;
-    max-width: 945px;
-    flex-direction: column;
 }
 
 .header-list {
@@ -47,11 +40,84 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    color: #828282;
+    color: #000;
+    background-color: #fff;
     border-bottom: 1px solid #828282;
+    margin-bottom: 0rem;
 }
 
+.header-list a, .nav-burger a{
+    text-decoration: none;
+    color: #000;
+}
 
+.menu-burger {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    color: #000;
+    text-align: center;
+    height: 40px;
+}
+
+#check-menu {
+    display: none;
+}
+
+#label-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+}
+
+.second, .third {
+    top: 18px;
+}
+
+.fourth {
+    top: 28px;
+}
+
+.nav-burger {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.nav-burger a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    border-top: 1px solid #828282;
+}
+
+#check-menu:checked ~ .nav-burger {
+    max-height: 500px;
+    font-size: 16px;
+}
+    
 .head-descript {
     display: flex;
     margin-bottom: 40px;
@@ -78,31 +144,7 @@
     background-color: #F6F6F6;
 }
 
-.main-descript {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 120px;
-}
-
-.programs {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-.program {
-    width: 25%;
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-between;
-    margin: 0 10px;
-}
-
+    
 .p-descript-bold {
     color: #828282;
     font-weight: 700;
@@ -131,10 +173,7 @@ p.head {
     background-color: #F6F6F6;
 }
 
-.work-example {
-    margin: 50px 0px;
-}
-
+    
 .info {
     text-align: center;
     padding: 80px 0px;
@@ -161,7 +200,8 @@ p.head {
 
 .social-net {
     display: flex;
-    width: 343px;
+    width: 80%;
+    max-width: 343px;
     justify-content: space-between;
     margin-top: 80px;
 }
@@ -181,4 +221,177 @@ p.head {
 .total {
     display: flex;
     justify-content: space-between;
+}
+
+
+@media (min-width: 1200px) {
+
+    .menu-burger {
+        display: none;
+    }
+    
+    .main-container {
+        width: 60%;
+        max-width: 945px;
+        flex-direction: column;
+    }
+    
+    .main-descript {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 120px;
+    }
+    
+    .programs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    
+    .program {
+        width: 25%;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        margin: 0 10px;
+        padding: 10px;
+    }
+    
+    .work-example {
+        margin: 50px 0px;
+    }
+
+    #about-me, 
+    #skills, 
+    #portfolio, 
+    #contacts {
+        border-top: 124px solid transparent;
+        margin-top: -124px;
+        background-clip: padding-box;
+}
+
+}
+
+@media (max-width: 1199px) and (min-width: 600px) {
+
+    .menu-burger {
+        display: none;
+    }
+    
+    .main-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+    
+    .main-descript {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 60px;
+    }
+    
+    .programs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    
+    .program {
+        width: 25%;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        margin: 0 50px;
+        padding: 10px;
+    }
+    
+    .work-example {
+        margin: 50px auto;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 599px) {
+
+    .main {
+        margin-top: 40px;
+    }
+
+    .default-menu {
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    .head-descript {
+        align-content: center;
+    }
+    
+    .head-descript .p-descript,
+    .head-descript .p-head,
+    .head-descript .p-lang {
+        font-size: 16px;
+    }
+
+    .main-descript {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 30px;
+    }
+    
+    .programs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    
+    .program {
+        width: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+        margin: 0px 50px;
+        padding: 10px;
+    }
+    
+    .work-example {
+        margin: 50px auto;
+        max-width: 100%;
+    }
+ 
+    #about-me, 
+    #skills, 
+    #portfolio, 
+    #contacts {
+        border-top: 40px solid transparent;
+        margin-top: -40px;
+        background-clip: padding-box;
+}
+
 }
