@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -62,7 +63,7 @@
                 <div class="head-descript">
                     <p class="p-head">Denis <br> Novik</p>
                     <p class="p-descript">UX | UI designer <br> 24 years old, Minsk</p>
-                    <p class="p-lang">RU | <strong>ENG</strong></p>
+                    <p class="p-lang"><a href="main-ru.html">RU | <strong>ENG</strong></a></p>
                 </div>
     
                 <img class="img-me" src="img/me.png" alt="me">
@@ -221,21 +222,21 @@
 
                         <div class="input-group">
         
-                            <input type="text" aria-label="company-name" class="form-control" placeholder="Company name*">
-                            <input type="text" aria-label="activity" class="form-control" placeholder="Activity*">
+                            <input type="text" aria-label="company-name" class="form-control" placeholder="Company name*" required>
+                            <input type="text" aria-label="activity" class="form-control" placeholder="Activity*" required>
         
                         </div>
         
                         <div class="input-group">
                             
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com*">
-                            <input type="text" aria-label="phone" class="form-control" placeholder="phone number*">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com*" required>
+                            <input type="text" aria-label="phone" class="form-control" placeholder="phone number*" required>
         
                         </div>
         
                         <div class="input-group">
         
-                            <label for="customRange3" class="form-label">Numbers of page:</label>
+                            <label for="customRange3" class="form-label">Numbers of page: 8</label>
                             <input type="range" class="form-range" min="1" max="15" id="customRange2">
         
                         </div>
@@ -250,8 +251,8 @@
                                 <p class="p-descript">
                                     Total: 
                                 </p>
-                                <p class="p-descript">
-    
+                                <p class="p-descript p-total">
+                                    from 400$
                                 </p>
 
                             </div>

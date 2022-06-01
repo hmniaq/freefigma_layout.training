@@ -46,7 +46,7 @@
     margin-bottom: 0rem;
 }
 
-.header-list a, .nav-burger a{
+.header-list a, .nav-burger a, .p-lang a{
     text-decoration: none;
     color: #000;
 }
@@ -206,7 +206,7 @@ p.head {
     margin-top: 80px;
 }
 
-.work-example img {
+.work-example img, .img-me {
     width: 100%;
 }
 
