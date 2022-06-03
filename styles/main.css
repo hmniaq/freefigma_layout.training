@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    user-select: none;  
 }
 
 .header, .main, .footer, .main-container, .article {
@@ -21,12 +22,11 @@
     font-weight: 700;
     position: fixed;
     z-index: 100;
-    background-color: #fff;
     top: 0;
 }
 
 .main {
-    margin-top: 124px;
+    margin-top: 88px;
 }
 
 .main, .article, .footer {
@@ -40,22 +40,16 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    color: #000;
-    background-color: #fff;
-    border-bottom: 1px solid #828282;
     margin-bottom: 0rem;
 }
 
 .header-list a, .nav-burger a, .p-lang a{
     text-decoration: none;
-    color: #000;
 }
 
 .menu-burger {
     width: 100%;
-    background-color: #fff;
     position: relative;
-    color: #000;
     text-align: center;
     height: 40px;
 }
@@ -81,7 +75,6 @@
     right: 10px;
     width: 35px;
     height: 2px;
-    background-color: #000;
 }
 
 .second, .third {
@@ -94,7 +87,6 @@
 
 .nav-burger {
     display: block;
-    background-color: #fff;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -103,6 +95,7 @@
     max-height: 0;
     font-size: 0;
     overflow: hidden;
+    transition: ease-in 0.3s;
 }
 
 .nav-burger a {
@@ -110,12 +103,12 @@
     width: 100%;
     padding: 10px;
     font-weight: 500;
-    border-top: 1px solid #828282;
 }
 
 #check-menu:checked ~ .nav-burger {
     max-height: 500px;
     font-size: 16px;
+    transition: ease-in 0.3s;
 }
     
 .head-descript {
@@ -136,17 +129,11 @@
     margin-top: 30px;
 }
 
-.article, .head-descript, .header {
+.article, .head-descript{
     margin-bottom: 40px;
 }
 
-.about-me-art {
-    background-color: #F6F6F6;
-}
-
-    
 .p-descript-bold {
-    color: #828282;
     font-weight: 700;
     font-size: 14px;
     margin-top: 20px;
@@ -170,7 +157,6 @@ p.head {
 .portfolio-art {
     text-align: center;
     padding: 40px 0px;
-    background-color: #F6F6F6;
 }
 
     
@@ -190,10 +176,8 @@ p.head {
 
 .button {
     margin-top: 30px;
-    background-color: black;
     border-radius: 40px;
     width: 180px;
-    color: #fff;
     padding: 10px 15px;
     font-size: 18px;
 }
@@ -223,6 +207,10 @@ p.head {
     justify-content: space-between;
 }
 
+.pc-theme-mode {
+    cursor: pointer;
+}
+
 
 @media (min-width: 1200px) {
 
@@ -232,7 +220,7 @@ p.head {
     
     .main-container {
         width: 60%;
-        max-width: 945px;
+        max-width: 1200px;
         flex-direction: column;
     }
     
@@ -263,6 +251,8 @@ p.head {
     }
     
     .work-example {
+        display: flex;
+        justify-content: center;
         margin: 50px 0px;
     }
 

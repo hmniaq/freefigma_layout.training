@@ -1,0 +1,53 @@
+.header {
+    background-color: #fff;
+}
+
+.header-list {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px solid #828282;
+}
+
+.header-list a, .nav-burger a, .p-lang a{
+    color: #000;
+}
+
+.menu-burger {
+    background-color: #fff;
+    color: #000;
+}
+
+.burger-line {
+    background-color: #000;
+}
+
+.nav-burger {
+    background-color: #fff;
+}
+
+.nav-burger a {
+    border-top: 1px solid #828282;
+}
+
+.about-me-art {
+    background-color: #F6F6F6;
+}
+
+    
+.p-descript-bold {
+    color: #828282;
+}
+
+.portfolio-art {
+    background-color: #F6F6F6;
+}
+
+button.btn {
+    background-color: #000;
+    color: #F6F6F6;
+}
+
+button.btn:hover {
+    background-color: #000;
+    color: #fff;
+}

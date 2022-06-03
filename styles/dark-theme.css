@@ -1,0 +1,58 @@
+.header, .main, .article, .footer {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+
+.header-list {
+    color: #fff;
+    background-color: rgb(37, 37, 37);
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.header-list a, .nav-burger a, .p-lang a{
+    color: #fff;
+}
+
+.menu-burger {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+}
+
+.burger-line {
+    background-color: #fff;
+}
+
+.nav-burger {
+    background-color: rgb(37, 37, 37);
+}
+
+.nav-burger a {
+    border-top: 1px solid #d8d8d8;
+}
+
+article.about-me-art {
+    background-color: rgb(58, 58, 58);
+}
+   
+.p-descript-bold {
+    color: #fff;
+}
+
+.portfolio-art {
+    background-color: rgb(58, 58, 58);
+}
+
+button.btn {
+    background-color: #fff;
+    color: rgb(37, 37, 37);
+}
+
+button.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+img[data-caption] {
+    background-color: #fff;
+    color: black;
+}
