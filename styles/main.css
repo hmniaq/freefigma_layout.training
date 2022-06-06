@@ -211,6 +211,21 @@ p.head {
     cursor: pointer;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+}
+
 
 @media (min-width: 1200px) {
 

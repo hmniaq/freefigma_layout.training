@@ -56,3 +56,11 @@ img[data-caption] {
     background-color: #fff;
     color: black;
 }
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal-cont {
+    background-color: rgb(58, 58, 58);
+}

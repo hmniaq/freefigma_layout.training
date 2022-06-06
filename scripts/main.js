@@ -91,3 +91,35 @@ function changeTheme(btn) {
     }
 
 }
+
+// Модальное окно
+
+let modal = document.querySelector('.modal');
+let btnModal = document.querySelector('.modal_btn');
+
+btnModal.addEventListener('click', function() {
+
+    modal.style.display = "block";
+
+});
+
+window.addEventListener('click', function(event){
+
+    if(event.target == modal)
+        modal.style.display = "none";
+
+});
+
+// AJAX, получение данных из файла data.json
+
+$.getJSON('data.json', function(data) {
+
+    if(currentLang == 'ru')
+        $('.name').html(data.nameru);
+    else
+        $('.name').html(data.nameeng);
+    
+    $('.email').html(data.email);
+    $('.github').html(data.github);
+
+});
